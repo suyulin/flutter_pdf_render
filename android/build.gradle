@@ -46,6 +46,11 @@ android {
         minSdkVersion 21
         targetSdkVersion 35
     }
+    packagingOptions {
+      jniLibs {
+        useLegacyPackaging true
+      }
+    }
     lintOptions {
         disable 'InvalidPackage'
     }
